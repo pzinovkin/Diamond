@@ -72,8 +72,8 @@ else:
                 data_files.append(('/usr/lib/systemd/system',
                                    ['rpm/systemd/diamond.service']))
             elif distro_major_version >= '6' and not distro == 'debian':
-                data_files.append(('/etc/init',
-                                   ['rpm/upstart/diamond.conf']))
+                pass
+                #data_files.append(('/etc/init', ['rpm/upstart/diamond.conf']))
 
     # Support packages being called differently on different distros
 
